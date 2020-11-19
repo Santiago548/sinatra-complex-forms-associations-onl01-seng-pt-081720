@@ -31,7 +31,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     @owners = Owner.all
 
-    erb :'pets/edit.erb'
+    erb :'pets/edit'
   end
 
   patch '/pets/:id' do
